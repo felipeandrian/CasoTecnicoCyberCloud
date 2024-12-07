@@ -1,7 +1,7 @@
 # CasoTecnicoCyberCloud
 Resposta Case técnico CyberSecurity Analyst
 
-### Política de Segurança baseada no csse técnico para Cybersecurity Analyst
+### Política de Segurança baseada no case técnico para Cybersecurity Analyst
 
 #### Introdução
 Esta política de segurança é projetada para mitigar e prevenir riscos de
