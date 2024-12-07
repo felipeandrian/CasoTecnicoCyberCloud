@@ -1,6 +1,101 @@
 # CasoTecnicoCyberCloud
-Case técnico CyberSecurity Analyst
+Resposta Case técnico CyberSecurity Analyst
 
+### Política de Segurança baseada no csse técnico para Cybersecurity Analyst
+
+#### Introdução
+Esta política de segurança é projetada para mitigar e prevenir riscos de
+segurança cibernética em ambientes de rede e cloud, utilizando uma
+abordagem baseada em scripts de análise de dados e práticas robustas de engenharia de segurança. A política detalha procedimentos específicos para detectar, bloquear e responder a ameaças cibernéticas, com base no arquivo de log recebido no case.
+
+#### Objetivos
+- **Proteção de Infraestrutura**: Garantir a segurança e a integridade
+das redes e dos ambientes de cloud da organização.
+- **Mitigação de Riscos Cibernéticos**: Implementar medidas proativas e
+reativas para identificar e neutralizar ameaças cibernéticas.
+- **Educação Contínua**: Promover a conscientização e a capacitação dos
+colaboradores sobre práticas seguras de TI.
+
+#### Componentes da Política de Segurança
+
+1. **Detecção de Ameaças**
+   - **Scripts de Análise de Logs e Tráfego**: Implementar scripts que
+monitoram logs de acesso e tráfego de rede, identificando padrões comuns
+de ataques cibernéticos. Esses scripts incluem:
+     - **UA-Analyser**: Detecta mudanças frequentes no User-Agent.
+     - **MultiReq-Analyser**: Monitora a taxa de requisições para
+identificar comportamentos suspeitos.
+     - **BadReq-Analyser**: Identifica e bloqueia caracteres especiais
+usados em tentativas de ataques.
+     - **CharLimit-Analyser**: Bloqueia requisições com mais de 250
+caracteres.
+     - **LFI-Analyser**: Monitora tentativas de inclusão de arquivos
+locais (LFI).
+     - **SQL-Injection-Analyser**: Detecta e bloqueia tentativas de
+injeção de SQL.
+     - **XSS-Analyser**: Identifica e bloqueia tentativas de Cross-Site
+Scripting (XSS).
+
+   - **Ferramentas de Monitoramento Contínuo**: Utilizar ferramentas de
+monitoramento de rede em tempo real para inspecionar tráfego e gerar
+alertas automáticos para atividades anômalas.
+
+2. **Bloqueio e Prevenção**
+   - **Firewalls e Listas de Bloqueio Dinâmica**: Configurar firewalls
+para bloquear IPs suspeitos e manter uma lista de bloqueio dinâmica que
+é atualizada automaticamente pelos scripts de análise. A política de
+bloqueio deve ser escalonada, aumentando o tempo de bloqueio a cada
+infração reincidente.
+   - **Padrões de Desenvolvimento Seguro**: Implementar práticas de
+desenvolvimento seguro, incluindo a validação e sanitização de entradas
+de usuários, para prevenir ataques de injeção.
+
+3. **Educação e Conscientização**
+   - **Treinamento Regular**: Realizar treinamentos periódicos para
+todos os colaboradores sobre práticas de segurança e a importância da
+detecção e resposta a ameaças cibernéticas.
+   - **Simulações de Ataques**: Conduzir simulações de ataques
+cibernéticos para testar a eficácia das medidas de segurança e a
+prontidão da equipe.
+
+4. **Resposta a Incidentes**
+   - **Equipe de Resposta a Incidentes**: Estabelecer uma equipe
+dedicada com procedimentos claros para identificar, conter e remediar
+violações de segurança.
+   - **Relatório de Incidentes**: Desenvolver um sistema de relatório
+para documentar incidentes de segurança, ações tomadas e resultados.
+
+#### Lógica por Trás da Política
+
+A lógica por trás desta política de segurança baseia-se em uma abordagem
+de **Defesa em Profundidade**, que incorpora múltiplas camadas de
+segurança para garantir uma proteção abrangente:
+
+- **Prevenção**: Reduzir a superfície de ataque através da sanitização
+de entradas de usuários e do desenvolvimento seguro de software.
+- **Detecção**: Monitorar continuamente o ambiente de TI para
+identificar atividades suspeitas usando scripts de análise de logs e
+ferramentas de monitoramento em tempo real.
+- **Resposta**: Implementar mecanismos automáticos para bloquear ameaças
+detectadas, como listas de bloqueio dinâmicas e firewalls configuráveis.
+- **Recuperação**: Garantir que a organização possa se recuperar
+rapidamente de um ataque através de processos de resposta a incidentes
+bem definidos e uma equipe dedicada.
+
+### Identificação de Riscos
+
+A política utiliza métodos proativos e reativos para identificar riscos:
+- **Proativo**: Scripts de análise que inspecionam logs e tráfego de
+rede em busca de padrões conhecidos de ataques. Ferramentas de
+monitoramento em tempo real que disparam alertas para atividades
+anômalas.
+- **Reativo**: Equipe de resposta a incidentes que analisa e trata
+incidentes de segurança conforme ocorrem. Relatórios de incidentes que
+documentam e fornecem insights para melhorias contínuas.
+
+Esta abordagem holística assegura que a organização não apenas responde
+a ataques cibernéticos, mas também aprende e evolui constantemente para
+melhorar suas defesas contra ameaças futuras.
 
 ### Identificação de Padrões e Anomalias
 
